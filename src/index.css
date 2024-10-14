@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  @keyframes fade-in-down {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-down {
+    animation: fade-in-down 1s ease-out;
+  }
+}
+
+
+.slick-slider .slick-prev{
+  background-color:rgba(0, 0, 0, 0.582);
+
+}
+.slick-slider .slick-next{
+  background-color:rgba(0, 0, 0, 0.582);
+color: red;
+}
